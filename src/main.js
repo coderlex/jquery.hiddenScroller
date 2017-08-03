@@ -1,7 +1,5 @@
 /**
  * $.hiddenScroller() plugin
- *
- * @author Alexander Korostin <coderlex@gmail.com>
  */
 (function($) {
 	'use strict'
