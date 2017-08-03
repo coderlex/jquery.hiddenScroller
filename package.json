@@ -1,14 +1,14 @@
 {
-  "name": "jquery-hiddenscroller",
+  "name": "jquery.hiddenscroller",
   "version": "1.0.0",
-  "description": "Provides touch-scrolling area with no handler",
+  "description": "Provides horizontal touch-based scrolling of content",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexander Korostin <coderlex@gmail.com>",
   "license": "MIT",
-  "repository": "gitlab:coderlex/jquery.hiddenScroller",
+  "repository": "github:coderlex/jquery.hiddenscroller",
   "main": "src/main.js",
   "dependencies": {
     "hammerjs": "^2.0.8",

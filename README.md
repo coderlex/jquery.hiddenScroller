@@ -6,12 +6,12 @@ The plugin provides the ability to scroll content of a block by swiping it left 
 
 With Bower:
 ```bash
-$ bower install --save jquery.hiddenScroller
+$ bower install --save jquery.hiddenscroller
 ```
 
 Or NPM:
 ```bash
-$ npm install --save jquery.hiddenScroller
+$ npm install --save jquery.hiddenscroller
 ```
 
 ## Dependecies
