@@ -12,7 +12,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src"
   ],
   "dependencies": {
     "hammerjs": "^2.0.8",

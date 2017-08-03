@@ -28,7 +28,7 @@ function jsTask(minify) {
 			DEBUG ? eslint.failAfterError() : gutil.noop(),
 			minify ? sourcemaps.init() : gutil.noop(),
 			minify ? uglify() : gutil.noop(),
-			rename('jquery.hiddenScroller' + (minify ? '.min.js' : '.js')),
+			rename('jquery.hiddenscroller' + (minify ? '.min.js' : '.js')),
 			minify ? sourcemaps.write('./maps') : gutil.noop(),
 			gulp.dest('dist/js'),
 			LIVE_RELOAD ? connect.reload() : gutil.noop(),
