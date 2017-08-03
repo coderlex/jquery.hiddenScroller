@@ -1,0 +1,21 @@
+{
+  "name": "jquery.hiddenScroller",
+  "description": "Provides horizontal touch-based scrolling of content",
+  "moduleType": [],
+  "authors": [
+    "Alexander Korostin <coderlex@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.1.1"
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>jQuery.hiddenScroller</title>
+
+	<style type="text/css">
+		* { box-sizing: border-box; }
+		html { margin: 0; padding: 0; }
+		body { margin: 0; padding: 0 15px; }
+		h2 { font-size: 18px; font-weight: bold; }
+		.tabs > ul {
+			list-style: none;
+			display: table;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+			font-size: 0;
+			white-space: nowrap;
+			user-select: none;
+		}
+		.tabs > ul:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.tabs > ul > li {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+		}
+		.tabs > ul > li + li {
+			margin-left: 5px;
+		}
+		.tabs > ul > li > a {
+			display: block;
+			padding: 6px 8px;
+			border: 1px solid lightblue;
+			border-bottom: 0;
+			border-radius: 6px 6px 0 0;
+			line-height: 1.2;
+			font-size: 16px;
+			color: cornflowerblue;
+			text-decoration: none;
+			background: white;
+		}
+	</style>
+</head>
+<body>
+	<h2>Toogle device mode in Developer Tools and try to slide left/right:</h2>
+	<nav class="tabs" style="max-width:280px;">
+		<ul>
+			<li class="current"><a href="#tab1">Tab 1</a></li>
+			<li><a href="#tab2">Tab 2</a></li>
+			<li><a href="#tab3">Tab 3</a></li>
+			<li><a href="#tab4">Tab 4</a></li>
+			<li><a href="#tab5">Tab 5</a></li>
+			<li><a href="#tab6">Tab 6</a></li>
+			<li><a href="#tab7">Tab 7</a></li>
+			<li><a href="#tab1">Tab 8</a></li>
+			<li><a href="#tab2">Tab 9</a></li>
+			<li><a href="#tab3">Tab 10</a></li>
+			<li><a href="#tab4">Tab 11</a></li>
+			<li><a href="#tab5">Tab 12</a></li>
+			<li><a href="#tab6">Tab 13</a></li>
+			<li><a href="#tab7">Tab 14</a></li>
+		</ul>
+	</nav>
+
+	<!-- Include dependencies before the plugin -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/hammerjs/hammer.min.js"></script>
+	<!-- The plugin itself -->
+	<script src="js/jquery.hiddenScroller.min.js"></script>
+
+	<script type="text/javascript">
+		jQuery(function($) {
+			// Disable drag-and-drop
+			$('.tabs a')
+				.mousedown(function(e) {
+					e.preventDefault();
+				});
+			// The values below are default ones
+			$('.tabs').hiddenScroller({
+				wrapContent: false,
+				swipeInertia: 0.005,
+				inertialExtent: 80
+			});
+		});
+	</script>
+</body>
+</html>

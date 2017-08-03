@@ -1,0 +1,12 @@
+{
+	"rules": {
+		"strict": 0
+	},
+	"globals": [
+		"jQuery",
+		"$"
+	],
+	"envs": [
+		"browser"
+	]
+}
