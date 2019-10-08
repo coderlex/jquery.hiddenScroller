@@ -35,10 +35,9 @@ The package depends on [HammerJS](https://hammerjs.github.io/) and [jQuery](http
 ```javascript
 jQuery(function($) {
 	// Disable drag-and-drop
-	$('.tabs a')
-		.mousedown(function(e) {
-			e.preventDefault();
-		});
+	$('.tabs a').mousedown(function(e) {
+		e.preventDefault();
+	});
 	// The values below are default ones
 	$('.tabs').hiddenScroller({
 		wrapContent: false,
